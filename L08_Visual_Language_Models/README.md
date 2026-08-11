@@ -41,6 +41,17 @@ Instead of selecting from predefined categories, the model generated natural-lan
 - Zero-Shot Classification
 - Image Captioning
 
+## Dataset
+
+This project uses the **CIFAR-10 dataset**, a public image classification dataset containing 10 image classes.
+
+The dataset is not stored in this GitHub repository.
+
+**Dataset source:**  
+https://www.cs.toronto.edu/~kriz/cifar.html
+
+CIFAR-10 can be loaded directly through common machine learning libraries such as TensorFlow/Keras or Torchvision. In this project, the dataset is loaded directly within the Jupyter notebook, so no manual dataset download is required before running the notebook.
+
 ## Results
 
 During CLIP testing, prompt wording affected classification performance.
