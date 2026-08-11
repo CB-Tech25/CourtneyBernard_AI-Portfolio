@@ -35,7 +35,20 @@ The workflow includes:
 - Object Detection
 - Image Processing
 
-## Results
+## Dataset and Pretrained Model
+
+This project uses pretrained **Ultralytics YOLO11** models for object detection and segmentation.
+
+The pretrained models were trained on the **COCO (Common Objects in Context) dataset**, which contains 80 common object categories.
+
+The full COCO dataset is not stored in this GitHub repository.
+
+**COCO Dataset:**  
+https://cocodataset.org/
+
+The YOLO model weights are downloaded automatically by Ultralytics when the model is loaded for the first time. The notebook then runs the pretrained model on sample and test images.
+
+No manual download of the full COCO dataset is required to run the object detection portion of this notebook.## Results
 
 The completed notebook contains the object detection results generated during the lab, including predictions and visual outputs.
 
