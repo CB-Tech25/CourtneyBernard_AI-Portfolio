@@ -28,6 +28,21 @@ The project uses a CNN-based image classification workflow that includes:
 - Google Colab
 - Convolutional Neural Networks (CNN)
 
+## Dataset
+
+This project uses the **Chihuahua vs. Muffin image dataset** provided with the workshop repository used in the lab.
+
+The dataset is not stored separately in this portfolio repository.
+
+**Dataset source:**  
+https://github.com/patitimoner/workshop-chihuahua-vs-muffin
+
+The dataset can be accessed by cloning the repository:
+
+git clone https://github.com/patitimoner/workshop-chihuahua-vs-muffin.git
+
+The notebook loads the training and validation images using `torchvision.datasets.ImageFolder()` from the `data/train` and `data/validation` directories.
+
 ## Results
 
 The completed notebook contains the training and evaluation results produced during the lab, including model outputs and visualizations.
