@@ -43,14 +43,18 @@ Instead of selecting from predefined categories, the model generated natural-lan
 
 ## Dataset
 
-This project uses the **CIFAR-10 dataset**, a public image classification dataset containing 10 image classes.
+This project uses a small validation subset of the **COCO-Karpathy dataset** for Vision-Language Model experiments.
 
 The dataset is not stored in this GitHub repository.
 
-**Dataset source:**  
-https://www.cs.toronto.edu/~kriz/cifar.html
+**Original COCO Dataset:**  
+https://cocodataset.org/
 
-CIFAR-10 can be loaded directly through common machine learning libraries such as TensorFlow/Keras or Torchvision. In this project, the dataset is loaded directly within the Jupyter notebook, so no manual dataset download is required before running the notebook.
+The notebook accesses the COCO-Karpathy data directly through the Hugging Face `datasets` library:
+
+load_dataset("yerevann/coco-karpathy", split="validation[:20]")
+
+Only a small validation subset is loaded for the experiment, and the image URLs are accessed within the notebook. No manual download of the full COCO dataset is required.
 
 ## Results
 
