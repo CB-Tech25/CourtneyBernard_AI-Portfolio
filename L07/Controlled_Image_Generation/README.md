@@ -34,6 +34,25 @@ One of my generated scenes used a Marrakech rooftop setting, which allowed me to
 - Image-to-Image Generation
 - Prompt Engineering
 
+## Dataset and Model
+
+This project does not use a traditional public training dataset.
+
+The image generation experiments use the pretrained **Stable Diffusion v1.5** model through the Hugging Face Diffusers library.
+
+**Model source:**  
+https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
+
+The model is loaded directly in the notebook using:
+
+StableDiffusionPipeline.from_pretrained(
+    "stable-diffusion-v1-5/stable-diffusion-v1-5"
+)
+
+The model weights are downloaded automatically when the notebook is run, so they are not stored in this GitHub repository.
+
+For the image-to-image portion of the project, I used a personal travel photograph that I took myself as the input image rather than a public dataset.
+
 ## Results
 
 The notebook contains the generated images and comparisons produced during the lab.
